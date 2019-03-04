@@ -8,9 +8,9 @@ max_bag_size = int(input())
 
 for i in range(number_of_inputs):
 	# Very useful way of taking in int input in python
-	a, b = map(int, input().split(' '))
-	size.append(a)
-	value.append(b)
+	a = list(map(int, input().split(' ')))
+	size.append(a[0])
+	value.append(a[1])
 
 ##### START ####
 

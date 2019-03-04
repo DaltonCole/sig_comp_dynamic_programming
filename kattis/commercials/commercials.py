@@ -20,10 +20,23 @@ for cost in profitability:
 		max_ending_here = 0
 
 	# If current best is better, it becomes the new best
-	if max_so_far < max_ending_here:
-		max_so_far = max_ending_here
+	max_so_far = max(max_so_far, max_ending_here)
 
 print(max_so_far)
 
 # Discussion: How is this dynamic programming? Where's the recursion??
 #	* Is this top-down or bottom-up?
+
+
+
+
+
+
+
+
+
+
+
+
+
+# By the way, this is the "Kadane’s Algorithm"

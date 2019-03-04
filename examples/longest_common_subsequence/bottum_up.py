@@ -29,6 +29,8 @@ def longest_common_subsequence(i, j):
 
 		memoizing[(i, j)] = max(memoizing[(i - 1, j)], memoizing[(i, j - 1)])
 
+
+
 for i in range(-1, len(string1)):
 	for j in range(-1, len(string2)):
 		longest_common_subsequence(i, j)
